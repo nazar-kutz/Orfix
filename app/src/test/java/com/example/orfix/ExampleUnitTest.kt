@@ -4,6 +4,7 @@ import com.example.orfix.music.MusicConstants.MAX_VELOCITY
 import com.example.orfix.music.MusicConstants.QUARTER_DURATION
 import com.example.orfix.music.Note
 import com.example.orfix.music.Party
+import com.example.orfix.music.attribute.Interval
 import com.example.orfix.music.attribute.Letter
 import com.example.orfix.music.attribute.Octave
 import org.junit.Test
@@ -37,11 +38,11 @@ class ExampleUnitTest {
 
         val n2 = Note(n1)
         n2.moveStartTick(QUARTER_DURATION)
-        n2.moveHeight(4)
+        n2.moveHeight(Interval.MAJOR_THIRD.halfTones)
 
         val n3 = Note(n2)
         n3.moveStartTick(QUARTER_DURATION)
-        n3.moveHeight(3)
+        n3.moveHeight(Interval.MINOR_THIRD.halfTones)
 
         val party = Party("Test Party")
         party.add(n1)

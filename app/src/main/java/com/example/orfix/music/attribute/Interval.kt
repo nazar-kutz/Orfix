@@ -1,5 +1,5 @@
 package com.example.orfix.music.attribute
-enum class Interval(halfTones: Int) {
+enum class Interval(val halfTones: Int) {
     MINOR_SECOND(1),
     MAJOR_SECOND(2),
     MINOR_THIRD(3),

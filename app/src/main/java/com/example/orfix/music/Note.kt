@@ -13,6 +13,8 @@ class Note (
     var velocity: Int = 0
 ) {
 
+    constructor(n: Note) : this(n.octave, n.letter, n.startTick, n.duration, n.velocity)
+
     fun getAbsoluteHeight(): Double {
         return letter.frequency * Math.pow(2.0, octave.index.toDouble())
     }
