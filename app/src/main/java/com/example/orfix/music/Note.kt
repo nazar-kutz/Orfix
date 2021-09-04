@@ -1,7 +1,7 @@
 package com.example.orfix.music
 
-import android.media.ToneGenerator.MAX_VOLUME
-import android.media.ToneGenerator.MIN_VOLUME
+import com.example.orfix.music.MusicConstants.MAX_VELOCITY
+import com.example.orfix.music.MusicConstants.MIN_VELOCITY
 import com.example.orfix.music.attribute.Letter
 import com.example.orfix.music.attribute.Octave
 import com.example.orfix.music.util.Algorithms
@@ -46,7 +46,7 @@ class Note (
     }
 
     fun shiftVelocity(shift: Int) {
-        velocity = Algorithms.shiftValueInBounds(velocity, shift, MIN_VOLUME, MAX_VOLUME)
+        velocity = Algorithms.shiftValueInBounds(velocity, shift, MIN_VELOCITY, MAX_VELOCITY)
     }
 
 }
