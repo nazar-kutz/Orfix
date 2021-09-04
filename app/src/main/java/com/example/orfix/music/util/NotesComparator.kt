@@ -12,7 +12,7 @@ enum class NotesComparator: Comparator<Note> {
     override fun compare(p0: Note, p1: Note): Int {
         return when {
             this == HEIGHT -> {
-                p0.getAbsoluteHeight().compareTo(p1.getAbsoluteHeight())
+                p0.frequency.compareTo(p1.frequency)
             }
             this == START_TICK -> {
                 p0.startTick.compareTo(p1.startTick)

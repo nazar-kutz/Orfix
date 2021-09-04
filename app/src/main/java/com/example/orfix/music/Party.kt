@@ -1,13 +1,11 @@
 package com.example.orfix.music
 
-import android.icu.text.LocaleDisplayNames.UiListItem.getComparator
 import com.example.orfix.music.util.NotesComparator
-import java.util.*
 
 
 class Party(
     var name: String,
-    var notes: MutableList<Note> = mutableListOf<Note>()
+    var notes: MutableList<Note> = mutableListOf()
 ) {
 
     fun add(note: Note) {
@@ -26,7 +24,7 @@ class Party(
         notes.clear()
     }
 
-    // TODO improve efficient
+    // TODO improve efficiency
     fun getDuration(): Int {
         var total: Int = 0
         for (note in notes) {

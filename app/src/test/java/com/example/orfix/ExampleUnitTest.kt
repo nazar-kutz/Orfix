@@ -32,17 +32,21 @@ class ExampleUnitTest {
         val n1 = Note()
         n1.startTick = 0
         n1.duration = QUARTER_DURATION
-        n1.octave = Octave.FIFTH_OCTAVE
+        n1.octave = Octave.FIRST_OCTAVE
         n1.letter = Letter.D
         n1.velocity = MAX_VELOCITY
 
         val n2 = Note(n1)
-        n2.moveStartTick(QUARTER_DURATION)
-        n2.moveHeight(Interval.MAJOR_THIRD.halfTones)
+        n2.shiftStartTick(QUARTER_DURATION)
+        n2.shiftHeight(Interval.MAJOR_THIRD.halfTones)
 
         val n3 = Note(n2)
-        n3.moveStartTick(QUARTER_DURATION)
-        n3.moveHeight(Interval.MINOR_THIRD.halfTones)
+        n3.shiftStartTick(QUARTER_DURATION)
+        n3.shiftHeight(Interval.MINOR_THIRD.halfTones)
+
+        val n4 = Note(n3)
+        n4.shiftStartTick(QUARTER_DURATION)
+        n4.shiftHeight(Interval.MINOR_THIRD.halfTones)
 
         val party = Party("Test Party")
         party.add(n1)
