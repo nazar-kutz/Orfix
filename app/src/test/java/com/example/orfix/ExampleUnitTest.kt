@@ -25,7 +25,8 @@ class ExampleUnitTest {
     @Test
     fun saveToMidiTest() {
         val party = createParty()
-        // TODO (save party to midi here)
+        val file = File("")
+        // TODO (already implemented)
     }
 
     fun createParty(): Party {
