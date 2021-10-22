@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<selector>
+			<item android:state_enabled="true">
+				<ripple android:color="@color/green_ripple">
+					<item>
+						<shape>
+							<gradient
+								android:angle="-90"
+								android:endColor="@color/green_gradient_bottom"
+								android:startColor="@color/green_gradient_top"
+								android:type="linear" />
+							<corners android:radius="@dimen/radius_large" />
+						</shape>
+					</item>
+				</ripple>
+			</item>
+
+			<item android:state_enabled="false">
+				<shape>
+					<gradient
+						android:angle="-90"
+						android:endColor="@color/button_disable_end_color"
+						android:startColor="@color/button_disable_top_color"
+						android:type="linear" />
+					<corners android:radius="@dimen/radius_normal" />
+				</shape>
+			</item>
+		</selector>
+	</item>
+
+<!--	<item>-->
+<!--		<shape>-->
+<!--			<solid android:color="@color/color_transparent"/>-->
+<!--			<stroke-->
+<!--				android:width="@dimen/btn_stroke_width"-->
+<!--				android:color="@color/white" />-->
+<!--			<corners android:radius="@dimen/radius_large" />-->
+<!--		</shape>-->
+<!--	</item>-->
+</layer-list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--Buttons-->
+	<style name="BaseButtonStyle" parent="TextAppearance.MaterialComponents.Button">
+		<item name="android:insetTop">0dp</item>
+		<item name="android:insetBottom">0dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:letterSpacing">0</item>
+	</style>
+
+	<style name="BaseWhiteLabelButtonStyle" parent="BaseButtonStyle">
+		<item name="android:padding">@dimen/content_padding</item>
+		<item name="backgroundTint">@null</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="StandardBlueButtonStyle" parent="BaseWhiteLabelButtonStyle">
+		<item name="android:background">@drawable/background_rounded_orange</item>
+		<item name="android:textSize">@dimen/primary_title_size</item>
+	</style>
+
+</resources>

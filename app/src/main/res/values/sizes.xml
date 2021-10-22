@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--Padding and margin-->
+	<dimen name="content_padding">16dp</dimen>
+	<dimen name="content_padding_half">8dp</dimen>
+	<dimen name="content_padding_small">12dp</dimen>
+	<dimen name="content_padding_xtr_small">4dp</dimen>
+	<dimen name="content_padding_large">20dp</dimen>
+	<dimen name="content_padding_xtr_large">24dp</dimen>
+	<dimen name="content_padding_double">32dp</dimen>
+	<dimen name="content_padding_double_large">40dp</dimen>
+	<dimen name="document_text_margin">10dp</dimen>
+
+	<!--Text sizes-->
+	<dimen name="primary_text_size">18sp</dimen>
+	<dimen name="secondary_text_size">16sp</dimen>
+	<dimen name="tertiary_text_size">14sp</dimen>
+	<dimen name="small_text_size">8sp</dimen>
+	<dimen name="primary_title_size">24sp</dimen>
+	<dimen name="secondary_title_size">22sp</dimen>
+	<dimen name="tertiary_title_size">20sp</dimen>
+
+	<!--Icons-->
+	<dimen name="icon_size_small">20dp</dimen>
+	<dimen name="icon_size_default">24dp</dimen>
+	<dimen name="icon_size_middle">30dp</dimen>
+	<dimen name="icon_size_large">36dp</dimen>
+
+	<!--Buttons-->
+	<dimen name="btn_square_size">104dp</dimen>
+	<dimen name="btn_standard_height">48dp</dimen>
+
+	<!--Stroke-->
+	<dimen name="stroke_width">2dp</dimen>
+
+	<!--List item-->
+	<dimen name="list_item_default_height">48dp</dimen>
+	<dimen name="list_item__large_height">56dp</dimen>
+
+	<!--Radius-->
+	<dimen name="radius_xrt_small">4dp</dimen>
+	<dimen name="radius_small">8dp</dimen>
+	<dimen name="radius_normal">20dp</dimen>
+	<dimen name="radius_large">30dp</dimen>
+
+	<!--Checkbox-->
+	<dimen name="checkbox_size">36dp</dimen>
+
+
+</resources>
