@@ -5,7 +5,8 @@
 	<dimen name="content_padding">16dp</dimen>
 	<dimen name="content_padding_half">8dp</dimen>
 	<dimen name="content_padding_small">12dp</dimen>
-	<dimen name="content_padding_xtr_small">4dp</dimen>
+	<dimen name="content_padding_x_small">4dp</dimen>
+	<dimen name="content_padding_xx_small">2dp</dimen>
 	<dimen name="content_padding_large">20dp</dimen>
 	<dimen name="content_padding_xtr_large">24dp</dimen>
 	<dimen name="content_padding_double">32dp</dimen>
@@ -47,5 +48,9 @@
 	<!--Checkbox-->
 	<dimen name="checkbox_size">36dp</dimen>
 
+	<!--Track-->
+	<dimen name="track_header_icon_size">16dp</dimen>
+	<dimen name="track_header_parent_indicator_icon_size">12dp</dimen>
+	<dimen name="track_header_width">120dp</dimen>
 
 </resources>
