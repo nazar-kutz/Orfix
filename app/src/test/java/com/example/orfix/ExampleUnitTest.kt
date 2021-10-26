@@ -1,5 +1,6 @@
 package com.example.orfix
 
+import com.example.orfix.helper.MidiHelper
 import com.example.orfix.music.MusicConstants.MAX_VELOCITY
 import com.example.orfix.music.MusicConstants.QUARTER_DURATION
 import com.example.orfix.music.Note
@@ -10,6 +11,8 @@ import com.example.orfix.music.attribute.Octave
 import org.junit.Test
 
 import org.junit.Assert.*
+import java.io.File
+import java.io.IOException
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -25,7 +28,14 @@ class ExampleUnitTest {
     @Test
     fun saveToMidiTest() {
         val party = createParty()
-        // TODO (save party to midi here)
+        val midi = MidiHelper.convertToMidi(party)
+        val output = File("exampleout.mid")
+
+        try {
+            midi.writeToFile(output)
+        } catch (e: IOException) {
+            System.err.println(e)
+        }
     }
 
     fun createParty(): Party {
