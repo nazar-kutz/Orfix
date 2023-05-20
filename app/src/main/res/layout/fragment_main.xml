@@ -3,10 +3,23 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-	<com.google.android.material.button.MaterialButton
-		android:layout_width="120dp"
-		android:layout_height="48dp"
-		style="StandardBlueButtonStyle"
-		android:background="@drawable/background_rounded_orange" />
 
+	<com.example.orfix.ui.component.composition.CompositionView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="@dimen/control_bar_height"
+		android:id="@+id/composition_view"/>
+
+<!--	<com.example.orfix.ui.component.TrackSequencerView-->
+<!--		android:id="@+id/sequencer_view"-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="match_parent"-->
+<!--		android:layout_marginBottom="@dimen/control_bar_height">-->
+
+<!--	</com.example.orfix.ui.component.TrackSequencerView>-->
+
+	<com.example.orfix.ui.component.ControlBarView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/control_bar_height"
+		android:layout_gravity="bottom"/>
 </FrameLayout>

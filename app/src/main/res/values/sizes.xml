@@ -5,7 +5,8 @@
 	<dimen name="content_padding">16dp</dimen>
 	<dimen name="content_padding_half">8dp</dimen>
 	<dimen name="content_padding_small">12dp</dimen>
-	<dimen name="content_padding_xtr_small">4dp</dimen>
+	<dimen name="content_padding_x_small">4dp</dimen>
+	<dimen name="content_padding_xx_small">2dp</dimen>
 	<dimen name="content_padding_large">20dp</dimen>
 	<dimen name="content_padding_xtr_large">24dp</dimen>
 	<dimen name="content_padding_double">32dp</dimen>
@@ -47,5 +48,26 @@
 	<!--Checkbox-->
 	<dimen name="checkbox_size">36dp</dimen>
 
+	<!--Track-->
+	<dimen name="track_header_icon_size">20dp</dimen>
+	<dimen name="track_headers_expand_icon_size">60dp</dimen>
+	<dimen name="track_headers_collapse_icon_size">40dp</dimen>
+	<dimen name="track_header_parent_indicator_icon_size">12dp</dimen>
+	<dimen name="track_header_width_expanded">120dp</dimen>
+	<dimen name="track_header_width_collapsed">50dp</dimen>
+	<dimen name="track_header_height">70dp</dimen>
+	<dimen name="track_header_name_font_size_expanded">18dp</dimen>
+	<dimen name="track_header_name_font_size_collapsed">14dp</dimen>
+	<dimen name="track_header_extends_count_font_size">8dp</dimen>
+	<dimen name="track_sequencer_height">300dp</dimen>
+	<dimen name="track_segment_button_size">26dp</dimen>
+	<dimen name="track_segment_resize_button_size">22dp</dimen>
+	<dimen name="track_new_track_button_size">26dp</dimen>
+
+	<!--Track-->
+	<dimen name="timeline_height">30dp</dimen>
+
+	<!--Control bar-->
+	<dimen name="control_bar_height">40dp</dimen>
 
 </resources>

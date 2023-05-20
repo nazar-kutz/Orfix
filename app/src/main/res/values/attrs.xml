@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="TrackHeaderView">
+		<attr name="trackName" format="string"/>
+		<attr name="extendsCount" format="integer"/>
+		<attr name="collapsedByDefault" format="boolean"/>
+		<attr name="childrenCount" format="integer"/>
+		<attr name="mutedByDefault" format="boolean"/>
+	</declare-styleable>
+
+	<declare-styleable name="TrackSequencerFieldView">
+		<attr name="ppqn" format="string"/>
+		<attr name="resolution" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="ControlBarView">
+		<attr name="isTrackChanged" format="boolean"/>
+	</declare-styleable>
+
+</resources>

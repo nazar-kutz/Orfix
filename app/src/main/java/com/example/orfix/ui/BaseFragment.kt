@@ -16,7 +16,7 @@ import com.example.orfix.ui.utils.AndroidUtils
 abstract class BaseFragment(@LayoutRes val layoutResId: Int) : Fragment() {
 
 	protected lateinit var activity: AppActivity
-	private lateinit var mainView: View
+	protected lateinit var mainView: View
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)

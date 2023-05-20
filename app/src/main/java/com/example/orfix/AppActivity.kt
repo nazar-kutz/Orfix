@@ -1,17 +1,28 @@
 package com.example.orfix
 
 import android.os.Bundle
+import android.view.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.FragmentTransaction
 import com.example.orfix.ui.BaseFragment
 import com.example.orfix.ui.fragment.MainFragment
+import com.google.android.material.navigation.NavigationBarView
 
 class AppActivity : AppCompatActivity() {
+
+	private var windowInsetsController: WindowInsetsControllerCompat? = null
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
 		MainFragment.showInstance(this)
+		windowInsetsController = ViewCompat.getWindowInsetsController(window.decorView)
+		windowInsetsController?.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+		windowInsetsController?.hide(WindowInsetsCompat.Type.systemBars())
+
 	}
 
 	fun showFragment(fragment: BaseFragment, tag: String?) {
