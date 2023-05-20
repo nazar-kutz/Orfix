@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="@dimen/track_header_width"
-	android:layout_height="wrap_content"
-	android:padding="@dimen/content_padding_half"
+	android:layout_width="@dimen/track_header_width_expanded"
+	android:layout_height="100dp"
 	android:background="@drawable/bg_rectangle"
-	android:orientation="vertical">
+	android:backgroundTint="@color/gray_main"
+	android:backgroundTintMode="add"
+	android:orientation="vertical"
+	android:padding="@dimen/content_padding_half">
 
 	<LinearLayout
 		android:id="@+id/parent_indicator"
@@ -25,7 +27,7 @@
 			android:layout_gravity="center"
 			android:layout_marginStart="@dimen/content_padding_xx_small"
 			android:gravity="center"
-			android:textColor="@color/black"
+			android:textColor="@color/white_main"
 			android:textSize="@dimen/small_text_size"
 			tools:text="2" />
 
@@ -35,10 +37,10 @@
 		android:id="@+id/track_name"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:textColor="@color/black"
-		android:textSize="@dimen/primary_text_size"
-		android:paddingVertical="@dimen/content_padding_x_small"
 		android:layout_marginHorizontal="@dimen/content_padding_half"
+		android:paddingVertical="@dimen/content_padding_x_small"
+		android:textColor="@color/white_main"
+		android:textSize="@dimen/primary_text_size"
 		tools:text="Layer" />
 
 	<LinearLayout
@@ -67,28 +69,29 @@
 			android:layout_gravity="center"
 			android:layout_weight="1">
 
-		<androidx.appcompat.widget.AppCompatImageView
-			android:id="@+id/settings"
-			android:layout_width="@dimen/track_header_icon_size"
-			android:layout_height="@dimen/track_header_icon_size"
-			android:layout_gravity="center"
-			android:src="@drawable/ic_settings" />
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/settings"
+				android:layout_width="@dimen/track_header_icon_size"
+				android:layout_height="@dimen/track_header_icon_size"
+				android:layout_gravity="center"
+				android:src="@drawable/ic_settings" />
 
 		</FrameLayout>
+
 		<FrameLayout
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
 			android:layout_gravity="center"
 			android:layout_weight="1">
 
-		<androidx.appcompat.widget.AppCompatImageView
-			android:id="@+id/volume"
-			android:layout_width="@dimen/track_header_icon_size"
-			android:layout_height="@dimen/track_header_icon_size"
-			android:layout_gravity="end"
-			android:src="@drawable/ic_volume" />
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/volume"
+				android:layout_width="@dimen/track_header_icon_size"
+				android:layout_height="@dimen/track_header_icon_size"
+				android:layout_gravity="end"
+				android:src="@drawable/ic_volume" />
 
-	</FrameLayout>
+		</FrameLayout>
 	</LinearLayout>
 
 </LinearLayout>

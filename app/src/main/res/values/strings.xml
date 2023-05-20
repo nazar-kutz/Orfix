@@ -1,3 +1,4 @@
 <resources>
 	<string name="app_name">Orfix</string>
+    <string name="button_generate">generate</string>
 </resources>

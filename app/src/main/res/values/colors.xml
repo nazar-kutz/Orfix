@@ -7,6 +7,42 @@
 	<color name="teal_700">#FF018786</color>
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
+	<color name="gray_background_main">#212429</color>
+	<color name="gray_main">#313439</color>
+	<color name="white_main">#C6CFDE</color>
+	<color name="white_main_inactive">#868D99</color>
+
+	<color name="track_1">#EF5350</color>
+	<color name="track_2">#EC407A</color>
+	<color name="track_3">#AB47BC</color>
+	<color name="track_4">#7E57C2</color>
+	<color name="track_5">#5C6BC0</color>
+	<color name="track_6">#42A5F5</color>
+	<color name="track_7">#29B6F6</color>
+	<color name="track_8">#26C6DA</color>
+	<color name="track_9">#26A69A</color>
+	<color name="track_10">#66BB6A</color>
+	<color name="track_11">#9CCC65</color>
+	<color name="track_12">#D4E157</color>
+	<color name="track_13">#FFEE58</color>
+	<color name="track_14">#FFCA28</color>
+	<color name="track_15">#FFA726</color>
+	<color name="track_16">#FF7043</color>
+	<color name="track_17">#4DF791</color>
+	<color name="track_18">#F74D94</color>
+	<color name="track_19">#4AF7F7</color>
+	<color name="track_20">#5AF74A</color>
+	<color name="track_21">#E0F336</color>
+
+
+
+	<!--Sequencer Field-->
+	<color name="big_line">#212429</color>
+	<color name="medium_line">#23262B</color>
+	<color name="small_line">#23262B</color>
+	<color name="horizontal_line">#22252A</color>
+
+	<color name="timeline_underline">#424D52</color>
 
 	<color name="green_ripple">#5593d015</color>
 	<color name="green_gradient_top">#b7dd4d</color>
